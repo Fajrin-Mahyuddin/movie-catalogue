@@ -12,20 +12,24 @@
     display: none;
   }
   .app-bar__navigation {
-    display: inline-block;
+    background-color: transparent;
+    position: static;
+    padding: 0px;
   }
   .app-bar__navigation ul {
     list-style: none;
+    display: inline-block;
   }
   .app-bar__navigation ul li {
     display: inline-block;
-    margin-left: 20px;
-
+    padding: 2px 8px;
   }
   .app-bar__navigation ul li a {
     color: #3b3a3a;
     text-decoration: none;
-
+  }
+  .movies {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -40,16 +44,50 @@
     box-shadow: 0px 0px 8px -1px rgb(82, 79, 79);
   }
   .app-bar__navigation {
-    display: inline-block;
+    background-color: transparent;
+    position: static;
+    padding: 0px;
   }
   .app-bar__navigation ul {
     list-style: none;
+    display: inline-block;
   }
   .app-bar__navigation ul li {
-    display: inline-block;
-    margin-left: 20px;
+    padding: 2px 10px;
   }
-  .app-bar__navigation ul li a{
+  .app-bar__navigation ul li a {
     color: #3b3a3a;
+  }
+  .movies {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .app-bar {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1% 10%;
+    box-shadow: 0px 0px 8px -1px rgb(82, 79, 79);
+  }
+  .app-bar__navigation {
+    background-color: transparent;
+    position: static;
+    padding: 0px;
+  }
+  .app-bar__navigation ul {
+    list-style: none;
+    display: inline-block;
+  }
+  .app-bar__navigation ul li {
+    padding: 2px 10px;
+  }
+  .app-bar__navigation ul li a {
+    color: #3b3a3a;
+  }
+  .movies {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
