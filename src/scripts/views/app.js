@@ -1,3 +1,4 @@
+/* eslint-disable quotes */
 /* eslint-disable class-methods-use-this */
 /* eslint-disable no-underscore-dangle */
 import routes from "../routes/routes";

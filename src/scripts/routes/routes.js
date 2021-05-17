@@ -1,12 +1,11 @@
-import Detail from "../views/pages/detail";
-import NowPlaying from "../views/pages/now-playing";
-import Upcoming from "../views/pages/upcoming";
+import { NowPlaying, Upcoming, Likes, Detail } from '../views/pages';
 
 const routes = {
-  "/": NowPlaying,
-  "/now-playing": NowPlaying,
-  "/upcoming": Upcoming,
-  "/detail/:id": Detail,
+  '/': NowPlaying,
+  '/now-playing': NowPlaying,
+  '/upcoming': Upcoming,
+  '/likes': Likes,
+  '/detail/:id': Detail,
 };
 
 export default routes;
